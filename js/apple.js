@@ -113,6 +113,20 @@ $(".agm-tanchu-header a").eq(0).click(function(){
      }
 
    });
+  $(".agm-tanchu-dom ul li").eq(6).click(function(){
+    $(".col-b-1").css("display","none");
+    $(".agm-tanchu-header ul li").eq(1).css("display","none");
+    $(".col-f-2").eq(0).css("display","block");
+    $(".col-b-5").css("display","block");
+    $(".col-b-6").css("display","block");
+  })
+  $(".col-f-2").eq(0).click(function(){
+    $(".col-b-1").css("display","block");
+    $(".agm-tanchu-header ul li").eq(1).css("display","block");
+    $(".col-f-2").eq(0).css("display","none");
+    $(".col-b-5").css("display","none");
+    $(".col-b-6").css("display","none");
+  })
 })
 
 

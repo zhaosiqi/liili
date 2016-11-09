@@ -146,9 +146,18 @@ a{
     background-image: url(../img/apple.svg);
 }
 .agm-tanchu-header li {
-    width: 33.33%;
     height: 48px;
     float: left;
+}
+.col-f-1{
+	width: 33.33%;
+    height: 48px;
+}
+.col-f-2{
+	width: 33.33%;
+    height: 48px;
+    display: none;
+    text-align: center;
 }
 .agm-tanchu-header li a{
 	display: block;
@@ -185,14 +194,22 @@ a{
 	line-height: 48px;
 	position: relative;
 }
-.agm-tanchu-dom ul li a{
+/*.agm-tanchu-dom ul li a{
 	width: 100%;
 	height: 100%;
 	font-size: 22px;
 	color: #e0e0e0;
 	line-height: 48px;
+}*/
+.col-b-7{
+	width: 100%;
+	height: 100%;
+	font-size: 22px;
+	color: #e0e0e0;
+	line-height: 48px;
+	display: block;
 }
-.agm-tanchu-dom ul li a:hover{
+.col-b-7:hover{
 	color: #545454;
 }
 .col-b-1{
@@ -200,6 +217,7 @@ a{
 }
 .col-b-2{
 	border-bottom:1px solid #c0c0c0;
+	cursor: text;
 }
 .col-b-4{
 	padding-left: 30px;
@@ -213,6 +231,33 @@ a{
 	top: 0px;
 	left: 0px;
 	z-index: 999;
+}
+.col-b-5{
+	width: 100%;
+	height: 100%;
+	font-size: 10px;
+	color: #ccc;
+	line-height: 48px;
+	display: none;
+}
+.col-b-6{
+	width: 95%;
+	height: 100%;
+	border-bottom: 1px solid #333;
+	line-height: 48px;
+	float: right;
+	color: #ccc;
+	font-size: 14px;
+	display: none;
+}
+.col-b-8{
+	font-size: 12px;
+}
+.col-b-9{
+	font-size: 16px;
+}
+.col-b-6:hover{
+	color: #66BBFF;
 }
 .agm-tanchu-dom ul li:nth-child(7){}
  @media screen and (max-width: 800px){
@@ -335,6 +380,15 @@ a{
 	}
 	.agm-tanchu{
 	display: none;
+    }
+    .col-f-2{
+    	display: none;
+    }
+    .col-b-5{
+    	display: none;
+    }
+    .col-b-6{
+    	display: none;
     }
     .header{
     	display: block;
@@ -607,6 +661,15 @@ footer{
 	left: 0px;
 	z-index: 1000;
 	display: none;
+    }
+    .col-f-2{
+    	display: none;
+    }
+    .col-b-5{
+    	display: none;
+    }
+    .col-b-6{
+    	display: none;
     }
     .header{
     	display: block;
